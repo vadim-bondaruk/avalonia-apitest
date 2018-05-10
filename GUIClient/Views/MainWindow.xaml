@@ -32,6 +32,7 @@
       <RowDefinition Height="50" />
       <RowDefinition Height="50" />
       <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
     <Button Margin="10" Name="btnConsumerGet">ConsumerGet</Button>
@@ -43,7 +44,8 @@
     <Button Margin="10" Grid.Row="2">Button 7</Button>
     <Button Margin="10" Grid.Column="1" Grid.Row="2">Button 8</Button>
     <Button Margin="10" Grid.Column="2" Grid.Row="2">Button 9</Button>
-    <ScrollViewer Grid.Row="4" Grid.ColumnSpan="3">
+    <TextBlock  Name="timeText" Grid.Row="3" Grid.ColumnSpan="3" TextAlignment="Center" FontSize="14"></TextBlock>
+    <ScrollViewer Grid.Row="5" Grid.ColumnSpan="3">
       <TextBlock  Name="outputText"></TextBlock>
     </ScrollViewer>
 
