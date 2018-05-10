@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<ItemGroup>
+     <PackageReference Include="Microsoft.Azure.KeyVault" Version="2.3.2" />
+     <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.1" />
+     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="3.19.4" />
+     <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.11" />
+     <PackageReference Include="Microsoft.Rest.ClientRuntime.Azure" Version="3.3.12" />
+     <PackageReference Include="NSec.Cryptography" Version="18.5.0-preview3" />
+</ItemGroup>
+<ItemGroup>
+  <Reference Include="Microsoft.Azure.KeyVault">
+    <HintPath>..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.azure.keyvault\2.3.2\lib\netstandard1.4\Microsoft.Azure.KeyVault.dll</HintPath>
+  </Reference>
+</ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+</Project>
