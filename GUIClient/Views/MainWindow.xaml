@@ -4,7 +4,7 @@
         Icon="resm:GUIClient.Assets.avalonia-logo.ico"
         Title="GUIClient"
         Height="700"
-        Width="400">
+        Width="700">
 
   <Design.DataContext>
     <vm:MainWindowViewModel/>
@@ -33,19 +33,23 @@
       <RowDefinition Height="50" />
       <RowDefinition Height="50" />
       <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
-    <Button Margin="10" Name="btnConsumerGet">ConsumerGet</Button>
-    <Button Margin="10" Grid.Column="1">Button 2</Button>
-    <Button Margin="10" Grid.Column="2">Button 3</Button>
-    <Button Margin="10" Grid.Row="1">Button 4</Button>
-    <Button Margin="10" Grid.Column="1" Grid.Row="1">Button 5</Button>
-    <Button Margin="10" Grid.Column="2" Grid.Row="1">Button 6</Button>
-    <Button Margin="10" Grid.Row="2">Button 7</Button>
-    <Button Margin="10" Grid.Column="1" Grid.Row="2">Button 8</Button>
-    <Button Margin="10" Grid.Column="2" Grid.Row="2">Button 9</Button>
-    <TextBlock  Name="timeText" Grid.Row="3" Grid.ColumnSpan="3" TextAlignment="Center" FontSize="14"></TextBlock>
-    <ScrollViewer Grid.Row="5" Grid.ColumnSpan="3">
+    <Button Margin="10" Name="btnConsumerMerchantsSeedRequestsGet">ConsumerMerchantsSeedRequestsGet</Button>
+    <Button Margin="10" Grid.Column="1" Name="btnConsumerPut">ConsumerPut</Button>
+    <Button Margin="10" Grid.Column="2" Name="btnConsumerRequestsHistoryViewGet">ConsumerRequestsHistoryViewGet</Button>
+    <Button Margin="10" Grid.Row="1" Name="btnConsumerGet">ConsumerGet</Button>
+    <Button Margin="10" Grid.Column="1" Grid.Row="1" Name="btnConsumerRequestsHistoryGet">ConsumerRequestsHistoryGet</Button>
+    <Button Margin="10" Grid.Column="2" Grid.Row="1" Name="btnConsumerRequestsGet">ConsumerRequestsGet</Button>
+    <Button Margin="10" Grid.Row="2" Name="btnConsumerMerchantsGet">ConsumerMerchantsGet</Button>
+    <Button Margin="10" Grid.Column="1" Grid.Row="2" Name="btnConsumerRequestsHistoryViewPut">ConsumerRequestsHistoryViewPut</Button>
+    <Button Margin="10" Grid.Column="2" Grid.Row="2" Name="btnConsumerRequestsIdAcceptGet">ConsumerRequestsIdAcceptGet</Button>
+    <Button Grid.Row="3" Margin="10" Name="btnConsumerRequestsIdAcceptDelete">ConsumerRequestsIdAcceptDelete</Button>
+    <Button Grid.Row="3" Grid.Column="1" Name="btnConsumerRequestsIdGet" Margin="10">ConsumerRequestsIdGet</Button>
+    <Button Grid.Row="3" Grid.Column="2" Margin="10" Name="btnConsumerRequestsHistoryPut">ConsumerRequestsHistoryPut</Button>
+    <TextBlock  Name="timeText" Grid.Row="4" Grid.ColumnSpan="3" TextAlignment="Center" FontSize="14"></TextBlock>
+    <ScrollViewer Grid.Row="6" Grid.ColumnSpan="3">
       <TextBlock  Name="outputText"></TextBlock>
     </ScrollViewer>
 
