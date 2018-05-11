@@ -1,0 +1,34 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UserRegistration"
+        Height="500"
+        Width="700">
+  <Window.Styles>
+    <Style Selector="Button">
+      <Setter Property="Button.Foreground" Value="White"/>
+      <Setter Property="Button.Background" Value="Green"/>
+    </Style>
+  </Window.Styles>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="1*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Button Margin="10" Name="btnRegister" >Register</Button>
+    <Button Margin="10" Grid.Column="1" Name="btnSendVerificationCode" >SendVerificationCode</Button>
+    <Button Margin="10" Grid.Column="2" Name="btnCheckVerificationCode" >CheckVerificationCode</Button>
+    <Button Margin="10" Grid.Row="1"  Grid.Column="1" Name="btnMain">Go To Main</Button>
+    <TextBlock  Name="timeText" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Center" FontSize="14"></TextBlock>
+    <ScrollViewer Grid.Row="3" Grid.ColumnSpan="3">
+      <TextBlock  Name="outputText"></TextBlock>
+    </ScrollViewer>
+  </Grid>
+
+</Window>
